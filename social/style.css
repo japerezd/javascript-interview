@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.profile {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width: 15rem;
+    border: 1px solid #000;
+    padding: 1rem;
+}
+
+.profile__username {
+    text-transform: uppercase;
+}
+
+img {
+    border-radius: 100%;
+}

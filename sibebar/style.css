@@ -1,0 +1,93 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --black: #000;
+    --white: #fff;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Dank mono', monospace;
+}
+
+/************** Navigation **************/
+body {
+    display: flex;
+}
+.main-nav {
+    height: 100vh;
+    max-width: 20rem;
+    font-size: 2rem;
+    padding: 1rem 3.6rem;
+    background-color: var(--black);
+    color: var(--white);
+    transform: translateX(-100%);
+    transition: transform .3s ease-in-out;
+    position: relative;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+    gap: 1.2rem;
+}
+
+.list-item {
+    list-style: none;
+}
+
+.list-item a:link,
+.list-item a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list-item a:hover,
+.list-item a:active {
+    text-decoration: underline;
+}
+
+.close {
+    font-size: 2.4rem;
+    background: none;
+    color: var(--white);
+    border: none;
+    display: block;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: auto;
+    position: absolute;
+    right: 1.5rem;
+}
+
+
+/************** Main content **************/
+
+.main-content {
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    color: var(--black);
+    font-size: 1.2rem;
+    border: 2px solid var(--black);
+    background: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: 0.5rem 1rem;
+}
